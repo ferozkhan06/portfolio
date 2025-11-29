@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --bg-dark: #050816;
+  --neon-cyan: #00d4ff;
+  --neon-purple: #915eff;
+  --neon-pink: #ff0080;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* --- CYBER GRID BACKGROUND --- */
+.cyber-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+
+/* --- 3D NEON CARD --- */
+.neon-card {
+  background: rgba(21, 16, 48, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  transform-style: preserve-3d; /* Key for 3D effect */
+}
+
+/* Glowing Borders on Hover */
+.neon-card:hover {
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 25px rgba(0, 212, 255, 0.3), inset 0 0 10px rgba(0, 212, 255, 0.1);
+}
+
+/* --- TEXT GLOWS --- */
+.text-glow-blue { text-shadow: 0 0 10px rgba(0, 212, 255, 0.7); }
+.text-glow-purple { text-shadow: 0 0 10px rgba(145, 94, 255, 0.7); }
+
+.text-gradient {
+  background: linear-gradient(to right, #00d4ff, #915eff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --- ANIMATIONS --- */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+.animate-float { animation: float 6s ease-in-out infinite; }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg-dark); }
+::-webkit-scrollbar-thumb { background: linear-gradient(var(--neon-cyan), var(--neon-purple)); border-radius: 4px; }

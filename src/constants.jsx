@@ -15,7 +15,7 @@ export const details = {
   linkedin: "https://www.linkedin.com/in/feroz-khan-k-062983228/",
   github: "https://github.com/ferozkhan06",
   instagram: "https://www.instagram.com/khxn.fero/?hl=en",
-  resumeLink: "/FEROZKHAN_CV.pdf", // Make sure this file exists in your public folder!
+  resumeLink: "/FEROZKHAN_CV.pdf",
   profile: "Software Engineer with 1+ years of experience in PeopleSoft Campus Solutions. Skilled in PeopleCode, Integration tools, and Full Stack Development. Passionate about delivering scalable, user-friendly solutions."
 };
 

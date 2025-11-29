@@ -114,13 +114,13 @@ function App() {
               View My Work
             </a>
             <a
-              href={details.resumeLink}
-              target="_blank"
-              rel="noreferrer"
-              className="px-8 py-4 border border-purple-400/50 text-purple-300 hover:bg-purple-500/10 rounded-xl font-bold flex items-center justify-center gap-2"
-            >
-              <FaFileDownload /> Download Resume
-            </a>
+            href={details.resumeLink}
+            target="_blank"
+            rel="noreferrer"
+            className="px-8 py-4 border border-purple-400/50 text-purple-300 hover:bg-purple-500/10 rounded-xl font-bold flex items-center justify-center gap-2"
+          >
+          <FaFileDownload /> Download Resume
+          </a>
           </div>
           
           {/* Social Links Hero */}
@@ -297,7 +297,7 @@ function App() {
             <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-5">
               <input type="text" name="name" value={form.name} onChange={handleChange} placeholder="Your Name" className="bg-white/5 border border-white/10 p-4 rounded-xl text-white outline-none focus:border-[#00d4ff] transition-colors" required />
               <input type="email" name="email" value={form.email} onChange={handleChange} placeholder="Your Email" className="bg-white/5 border border-white/10 p-4 rounded-xl text-white outline-none focus:border-[#00d4ff] transition-colors" required />
-              <input type="text" name="phone" value={form.phone} onChange={handleChange} placeholder="Phone (Optional)" className="bg-white/5 border border-white/10 p-4 rounded-xl text-white outline-none focus:border-[#00d4ff] transition-colors" />
+              <input type="text" name="phone" value={form.phone} onChange={handleChange} placeholder="Phone" className="bg-white/5 border border-white/10 p-4 rounded-xl text-white outline-none focus:border-[#00d4ff] transition-colors" />
               <textarea rows="4" name="message" value={form.message} onChange={handleChange} placeholder="Your Message" className="bg-white/5 border border-white/10 p-4 rounded-xl text-white outline-none focus:border-[#00d4ff] transition-colors" required />
               
               <button type="submit" className="w-full py-4 bg-gradient-to-r from-[#00d4ff] to-blue-600 rounded-xl font-bold text-lg shadow-lg hover:shadow-[#00d4ff]/50 transition-all flex items-center justify-center gap-2">
